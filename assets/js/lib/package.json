@@ -1,14 +1,6 @@
 {
-  "name": "resumesite",
-  "version": "1.0.0",
-  "description": "Resume site",
-  "main": "../script.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "jfaldasz",
-  "license": "ISC",
-  "dependencies": {
-    "jquery": "^3.4.1"
-  }
+    "dependencies": {
+        "jquery": "3.4.1",
+        "waypoints": "^4.0.1"
+    }
 }

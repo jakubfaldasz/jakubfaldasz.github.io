@@ -5,6 +5,7 @@
 
 body {
     height: 100%;
+    width: 100vw;
     font-family: "Poppins";
 }
 
@@ -12,15 +13,16 @@ body {
     position: fixed;
     top: 0;
     /* background: rgba(67, 151, 95, 0.6); */
-    /* background: rgba(17, 67, 145, 0.3); */
-    background: rgba(0, 6, 15, 0.61);
+    background: rgba(17, 67, 145, 0.3);
+    /* background: rgba(0, 6, 15, 0.61); */
     width: 100vw;
     -webkit-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
 }
 
 .navbarOnScroll {
-    background: #131212f5 !important;
+    /* background: #131212f5 !important; */
+    background: rgba(10, 39, 87, 0.89) !important;
     /* background-color: rgba(9, 38, 100, 1) !important; */
 }
 
@@ -98,7 +100,7 @@ body {
 }
 
 #home {
-    background: #43975f url("../imgs/1.jpg");
+    background: url("../imgs/1.jpg");
     background-size: cover;
     background-position: center top;
     background-attachment: scroll;
@@ -110,10 +112,10 @@ body {
 }
 
 #homeContent {
-    border-radius: 2em;
-    background: #000000b4;
-    width: 40vw;
-    height: 400px;
+    border-radius: 0.5em;
+    background: #0000005e;
+    width: 35vw;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,29 +123,48 @@ body {
     margin: 0 auto;
     color: white;
     text-shadow: 2x 2px rgba(0, 0, 0, 0.8);
-    padding-bottom: 50px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,.4);
+    padding-bottom: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .4);
+}
+
+.btn {
+    /* border: none; */
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: 2rem;
+    background: none;
+    margin-top: 40px;
+}
+
+.btn:hover {
+    color: rgb(167, 167, 167);
 }
 
 #homeContent>div {
     text-align: center;
+    
 }
 
 .welcomeMessage {
-    font-size: 5rem;
+    letter-spacing: 0.1em;
+    /* font-family: 'Viga', sans-serif; */
+    font-size: 4rem;
     white-space: nowrap;
+    /* text-transform: uppercase; */
 }
 
 .desc {
     font-size: 1.4em;
+    color: #F06000;
 }
 
 #about {
-    overflow: scroll;
+    overflow: hidden;
     width: 100vw;
     height: auto;
-    background: rgb(39, 43, 48);
-
+    background: rgb(2, 29, 61);
+    /* background: rgb(39, 43, 48); */
     /* background: rgb(6, 27, 71); */
 }
 
@@ -154,26 +175,138 @@ body {
     height: auto;
     text-align: justify;
     color: white;
-    overflow: hidden;
+    /* overflow: hidden; */
     align-items: center;
     padding: 50px 0;
 }
 
-.aboutContent img {
-    display: none;
+#faceImage img {
     align-self: center;
     border-radius: 50%;
     border: solid 3px rgb(255, 255, 255);
     max-width: 12vw;
     height: auto;
     margin-right: 50px;
+    position: relative;
+    left: -50vw;
 }
 
 .description {
-    display: none;
+    position: relative;
+    left: 50vw;
+}
+
+#skills {
+    width: 100vw;
+    height: auto;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid rgb(39, 43, 48);
+}
+
+.heading {
+    margin-top: 70px;
+    margin-left: 100px;
+    display: inline-block;
 }
 
 
+.heading h3 {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+    border-bottom: 3px solid rgb(39, 43, 48);
+}
+
+#skillSet {
+    width: 50vw;
+    margin-top: 110px;
+    margin-left: 200px;
+}
+
+#skillList {
+    list-style: none;
+    display: grid;
+    width: 45vw;
+    grid-gap: 25px 0px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+}
+
+.progressBar {
+    height: 20px;
+    border-radius: 0.2rem;
+    width: 70%;
+    background: rgb(221, 220, 220);
+}
+
+.progressBar span {
+    border-radius: 0.2rem;
+    display: block;
+    /* background: rgb(59, 59, 59); */
+    background: rgb(2, 29, 61);
+    height: 100%;
+    width: 0;
+    transition: width 1.5s;
+    -webkit-transition: width 1.5s;
+}
+
+.displayBars {
+    width: 60% !important;
+}
+
+.progressBar p {
+    display: none;
+}
+
+@media(max-width: 1568px) {
+    .welcomeMessage {
+        font-size: 3rem;
+    }
+}
+
+@media(max-width: 1250px) {
+    #homeContent {
+        width: 45vw;
+    }
+
+    .welcomeMessage {
+        font-size: 2.5rem;
+    }
+
+    .desc {
+        font-size: 1rem;
+    }
+
+    #skills {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #skills>div:first-child {
+        flex: 0 1 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .heading {
+        margin: 30px 0 30px 0;
+    }
+
+    #skillSet {
+        width: 70vw;
+        margin: 0;        
+    }
+
+    .skill {
+        width: 40vw;
+    }
+    
+    #faceImage img {
+        max-width: 18vw;
+    }
+
+}
 
 @media(max-width: 768px) {
     .navbar-content {
@@ -201,11 +334,14 @@ body {
         align-self: center;
         width: 80vw;
     }
-    .aboutContent img {
+    #faceImage img {
         display: none !important;
     }
+    .description {
+        width: 90vw;
+    }
     .welcomeMessage {
-        font-size: 10vw;
+        font-size: 2.5rem;
     }
 }
 

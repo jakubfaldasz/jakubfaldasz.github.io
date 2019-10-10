@@ -10,7 +10,8 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/lib/node_modules/jquery/dist/jquery.min.js"></script>
-    
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -46,33 +47,128 @@
                         Jakub Fałdasz
                     </p>
                     <p class="desc">
-                        Dajcie mi prace
+                        Java Full Stack Software Developer
                     </p>
                     <div class="buttons">
-                        <button class="btn">Git</button>
+                        <a href="https://github.com/jakubfaldasz" target="_blank" class="jam jam-github btn"></a>
+
+                        <!-- <button class="btn">Git</button>
                         <button class="btn">Resume</button>
-                        <button class="btn">Dupa</button>
+                        <button class="btn">Dupa</button> -->
                     </div>
                 </div>
             </div>
         </section>
-        <section id="about" >
+        <section id="about">
             <div class="aboutContent">
-                <img src="assets/imgs/face.jpg">
+                <div id="faceImage">
+                    <img src="assets/imgs/face.jpg">
+                </div>
                 <span class="stretcher"></span>
                 <div class="description">
-                        <h1>O mnie</h1>
-                        <p class="aboutSection">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta modi ratione, deleniti porro labore
-                            recusandae ex nemo omnis, officia, expedita explicabo veritatis similique. Illo non, quaerat unde
-                            dignissimos inventore hic corporis sunt molestiae tempore aut, commodi obcaecati distinctio,
-                            accusantium soluta.
-                        </p>
+                    <h1>O mnie</h1>
+                    <p class="aboutSection">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta modi ratione, deleniti porro
+                        labore
+                        recusandae ex nemo omnis, officia, expedita explicabo veritatis similique. Illo non, quaerat
+                        unde
+                        dignissimos inventore hic corporis sunt molestiae tempore aut, commodi obcaecati distinctio,
+                        accusantium soluta.
+                    </p>
                 </div>
             </div>
         </section>
         <section id="skills">
-                        
+            <div>
+                <div class="heading">
+                    <h3>skills</h3>
+                </div>
+            </div>
+
+            <div id="skillSet">
+                <ul id="skillList">
+                    <li class="skill">
+                        <p>Java SE</p>
+                        <div class="progressBar">
+                            <span>
+                                <p>60%</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="skill">
+                        <p>CSS</p>
+                        <div class="progressBar">
+                            <span>
+                                <p>70%</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="skill">
+                        <p>JavaScript</p>
+                        <div class="progressBar">
+                            <span>
+                                <p>80%</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="skill">
+                        <p>JQuery</p>
+                        <div class="progressBar">
+                            <span>
+                                <p>40%</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="skill">
+                        <p>NodeJS</p>
+                        <div class="progressBar">
+                            <span>
+                                <p>30%</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="skill">
+                        <p>Python</p>
+                        <div class="progressBar">
+                            <span>
+                                <p>20%</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="skill">
+                        <p>Bootstrap</p>
+                        <div class="progressBar">
+                            <span>
+                                <p>70%</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="skill">
+                        <p>SQL</p>
+                        <div class="progressBar">
+                            <span>
+                                <p>90%</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="skill">
+                        <p>Git</p>
+                        <div class="progressBar">
+                            <span>
+                                <p>30%</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="skill">
+                        <p>Linux</p>
+                        <div class="progressBar">
+                            <span>
+                                <p>50%</p>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section id="projects">
 
@@ -81,7 +177,9 @@
 
         </section>
     </main>
+    <script src="assets/js/lib/node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
     <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
