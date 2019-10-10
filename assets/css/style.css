@@ -12,6 +12,7 @@ body {
 #navbar {
     position: fixed;
     top: 0;
+    z-index: 500;
     /* background: rgba(67, 151, 95, 0.6); */
     background: rgba(9, 50, 117, 0.384);
     /* background: rgba(0, 6, 15, 0.61); */
@@ -22,7 +23,7 @@ body {
 
 .navbarOnScroll {
     /* background: #131212f5 !important; */
-    background: rgba(10, 39, 87, 0.89) !important;
+    background: rgba(10, 39, 87, 0.863) !important;
     /* background-color: rgba(9, 38, 100, 1) !important; */
 }
 
@@ -76,6 +77,8 @@ body {
     padding: 0;
     margin: 0;
     overflow: hidden;
+
+
 }
 
 .nav-ul {

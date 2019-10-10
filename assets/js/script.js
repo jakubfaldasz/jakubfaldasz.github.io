@@ -1,5 +1,6 @@
 var hamburger = $("#toggle-btn");
 hamburger.on("click", () => {
+    $("#navbar").toggleClass("navbarOnScroll");
     $(".collapse").slideToggle(500);
 });
 
